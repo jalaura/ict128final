@@ -7,7 +7,7 @@
 	PS> ./scan-network-ports 192.168.1.0 8080 1..254
 #>
 
-function Port-OpenClose {
+
 
 $networkIP = read-host "Enter network IP to scan ex. 192.168.1.0"
 $portNum = read-host "Enter port number ex. 8080"
@@ -26,5 +26,4 @@ foreach($count in $rangeIP) {
 			write-output "TCP port $portNum at $ipAll is not open"
 		}
 	}
-}
 }
