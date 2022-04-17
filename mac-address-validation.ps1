@@ -8,7 +8,7 @@
 	Success! MAC address 00:11:22:33:44:55 is valid
 #>
 
-function IsMACAddressValid {
+
     param (
         [string]$MACAddress = ""
     )
@@ -19,4 +19,3 @@ function IsMACAddressValid {
     } else {
         write-warning "Invalid MAC address: $MAC"
     }
-}
