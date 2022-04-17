@@ -8,7 +8,6 @@
       Success! IPv4 192.168.1.1 is valid
 #>
 
-function IPv4Validity {
     param (
         [string]$IPv4Address = ""
     )
@@ -19,4 +18,3 @@ function IPv4Validity {
     } else {
         write-warning "Invalid IPv4 address: $IPv4Address"
     }
-}
