@@ -7,11 +7,10 @@
 	PS> ./start-create-email name@gmail.com
 #>
 
-function Start-Default-Email {
+
     param (
         [string]$EmailAddress = ""
     )
     $EmailAddress = read-host "Enter an email address ex. name@gmail.com"
     $URL="mailto:$EmailAddress"
     Start-Process $URL
-}
