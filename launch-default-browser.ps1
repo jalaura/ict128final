@@ -7,9 +7,8 @@
 	PS> ./launch-default-browser
 #>
 
-function Launch-Default-Browser {
+
     param (
         [string] $URL = "https://www.google.com"
     )
     Start-Process $URL
-}
